@@ -1,7 +1,7 @@
 /** @format */
 
 // Drawing Mesh
-export const drawMask = (predictions, ctx) => {
+export const drawDefi = (predictions, ctx) => {
 	const image = new Image()
 	// Load an image of intrinsic size 300x227 in CSS pixels
 	image.src = '/fren.png'

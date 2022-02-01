@@ -5,7 +5,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import Webcam from 'react-webcam'
 import * as tf from '@tensorflow/tfjs'
 import * as facemesh from '@tensorflow-models/face-landmarks-detection'
-import { drawMesh, drawMask } from './utilities'
+import { drawMesh, drawDefi } from './util/filters'
 
 const Mask = () => {
 	const webcamRef = useRef(null)
@@ -66,7 +66,7 @@ const Mask = () => {
 				drawMesh(face, ctx)
 				break
 			case '1':
-				drawMask(face, ctx)
+				drawDefi(face, ctx)
 				break
 		}
 	}
